@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>My First Bitstarter - SPEC</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
@@ -135,14 +135,14 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Product</h1>
+          <h1>SPEC</h1>
         </div>
       </div> 
       <div class="row-fluid subheading">
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">One sentence description.</p>
+          <p class="lead">Station for Playing with Electronics and Computers</p>
         </div>
       </div>
       <div class="row-fluid pitch">
@@ -159,17 +159,17 @@
                 different in horizontal and vertical layouts, illustrating
                 media queries. -->
                 <div class="linediv-l">
-                <h3>1000</h3> <p>backers</p>
+                <h3>0</h3> <p>backers</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$6000</h3> <p>of $10,000</p>
+                  <h3>$0</h3> <p>of $10,000</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-r">
-                <h3>10</h3> <p>days left</p>
+                <h3>30</h3> <p>days left</p>
                 </div>
               </div>
             </div>
@@ -202,21 +202,21 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <object type="image/svg+xml" 
+                  data="http://openclipart.org/people/Machovka/Machovka_Computer_system_case.svg">SVG image of desktop computer case</object>
         </div>
         <div class="span5 copy">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+            What can you do with an older, but perfectly good, PC?
+          </p>
+          <p>
+            For years I've thought about how to "recycle" the functional desktop computers that businesses and individuals get rid of each year.
+            An interesting solution is to utilize the PC as the core of an electronics lab station setup. It has a power supply that can be
+            tapped into to provide benchtop power, and it usually has a sound card that can be utilized for a poor-man's oscilloscope and function generator.
+            Those two items alone are enough for a decent start to an electronics workbench, for learning and playing around with electronics.
+            But with free software (Linux, Python, etc.), the variety of hardware ports on most PCs (serial port, parallel port, USB ports, etc.), and
+            the wealth of knowledge available via the internet, there's practically no limit to the amount of learning and experimentation that can 
+            be accomplished with an otherwise free PC.
           </p>
         </div>
       </div>
@@ -224,21 +224,44 @@
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+            Linux-based PC (could be a Raspberry PI) running:
+            <ul>
+              <li>xoscope (sound card oscilloscope)</li>
+              <li>program for using sound card line-out as a function generator (GNU Radio ?, Snack Sound Toolkit, Ecasound)</li>
+              <li>program for reading game port (switch status and pot/resistance)</li>
+              <li>program for reading/writing parallel port (comedi, which can also interface to 8255 on PC bus) (pport, http://sourceforge.net/projects/pport)</li>
+              <li>program for reading/writing IR (infrared) module</li>
+              <li>program for reading/writing MIDI port (e.g. abc2midi)</li>
+              <li>AVR programming software</li>
+              <li>PIC programming software</li>
+              <li>several editors (edit PIC code, Python code, etc.) - vi, IDLE (Python IDE), ...</li>
+              <li>spreadsheet (electronic formula calculations, graphing of captured data, etc.)</li>
+              <li>Python (to write programs which can read/write the game port (pyGame), parallel port (pyParallel), serial port (pySerial), etc.)</li>
+            </ul>
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <object type="image/svg+xml" 
+                  data="http://openclipart.org/people/saparvia/computer_green.svg">SVG image of a computer terminal</object>
+        </div>
+      </div>
+
+      <div class="row-fluid section3">
+        <div class="span5 offset1 copy copy-left">
+          <p>
+            Circuit station component blocks
+            <ul>
+              <li>solderless breadboard</li>
+              <li>power supply block</li>
+              <li>potentiometers</li>
+              <li>transistors</li>
+              <li>...(many more)</li>
+            </ul>
+          </p>
+        </div>
+        <div class="span5 asset">
+          <object type="image/svg+xml" 
+                  data="http://openclipart.org/people/johnpeck/db9_backside.svg">SVG image of a serial port</object>
         </div>
       </div>
 
